@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Pilar Pinturas</title>
+    <link rel="shortcut icon" href="./img/brush.png" type="image/x-icon"> <!--Imagem na janela de navegação-->
+    <link rel="stylesheet" href="./css/contatos.css"> <!--Caminho para a pasta do CSS-->
+</head>
+<body>
+    <div id="principal"></div>
+    <header>
+        <img  class="logotipo"src="img/pilar-logo.png" alt="">
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="drop"><a href="portfolio.html">Portfólio</a></li>                 
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    <section class="contatos-img">
+        <div class="center">
+            <h1>CONTATOS</h1>
+            <p><strong>Entre em contato com Pilar Pinturas</strong></p>
+        </div>
+    </section>
+
+    <section class="texto">
+        <p class="centro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ea libero iure fuga veritatis magnam facilis quis! Delectus sit aspernatur neque officia at maiores sequi, laudantium optio consequatur voluptatem doloremque?</p>
+        <div class="logos-contatos">
+            <div class="contatos">
+                <img src="./img/Circled Envelope.png" alt="">
+                <h2>E-mail</h2>
+                <p>pilarpinturas@gmail.com</p>
+            </div>
+            <div class="contatos">
+                <img src="./img/Phone.png" alt="">
+                <h2>Telefone</h2>
+                <p>(19)&nbsp;1234-5678</p>
+            </div>
+            <div class="contatos gps">
+                <img src="./img/Google Maps.png" alt="">
+                <h2>Endereço</h2>
+                <p>Rua José nº 10 - Jd. Ouro Verde</p>
+            </div>
+        </div>
+        <h2>Preencha o formulário abaixo se desejar solicitar orçamento, fazer críticas, dar sugestões ou até mesmo um simples contato.</h2>
+    </section>
+    
+    <section class="formulario">
+        <form action="#" class="form">
+            <div>
+                <label for="nome">Digite seu nome:</label><br>
+                <input type="text" id="nome" placeholder="Nome Completo">
+            </div>
+            <div>
+                <label for="nome">Empresa:</label><br>
+                <input type="text" id="empresa" placeholder="Opcional">
+            </div>
+            <div>
+                <label for="nome">Digite seu e-mail:</label><br>
+                <input type="email" id="email" placeholder="seuemail@email.com"> <!--Placeholder = Deixa uma mensagem visual na caixa de inserção do que deve ser preenchido-->
+            </div>
+            <div>
+                <label for="nome">Telefone:</label><br>
+                <input type="tel" id="nome" placeholder="(00)1234-5678">
+            </div>
+            <div>
+                <label for="nome">Digite o assunto*</label><br>
+                <select name="assunto" id="assunto"><br> <!--Select = Possibilita a opção de selecionar o assunto desejado-->
+                    <option value="financeiero">Financeiro</option>
+                    <option value="recursoshumanos">Recursos Humanos</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="seila">Sei lá</option>
+                </select>
+            </div>
+            <div>
+                <label for="nome">Mensagem:</label><br>
+                <textarea name="" id="mensagem" cols="10" rows="10" placeholder="Deixe sua mensagem"></textarea>
+            </div>
+            <div class="botão">
+                <button><a href="#">Enviar</a></button>
+            </div>
+        </form>
+        <img  id="pincel" src="./img/pincel-contatos.png" alt="">
+    </section>
+
+    <footer>
+        <div class="whats">
+            <a href="https://api.whatsapp.com/send?phone=5519993031245&text=Texto%20aqui"
+            target="_blank"
+            style="position:fixed;bottom:20px;right:30px;"> <!--_target = Abre o link em outra janela. Position fixed = Deixa o elemento fixo na página, possibilitando usar o scroll e ele permanecer parado-->
+            <img class="whatsapp" src="https://3.bp.blogspot.com/-ckiKOobNJy8/XRIGyySxDII/AAAAAAAACv0/09JFzT4vlcUYHq19lu-pQfWjYq6dyKYzQCLcBGAs/s1600/contatowhats.png"> 
+            </a>
+        </div>
+    <div class="rodape">
+            <div class="f1">
+                <h2 class="titulo">Serviços</h2>
+                <li class="f3">Pinturas de Condominios</li>
+                <li class="f3"> Pintura de Fachadas</li>
+                <li class="f3">Pintura de Galpões e Hangares</li>
+            </div>
+            <div class="f1">
+                <h2  class="titulo">Informações</h2>
+                <li class="f3">CNPJ: 00.123.456/0001-89</li>
+                <li class="f3">Rua: São José do Rio Preto, 1100- Bairro: Nova Campinas - Campinas/SP</li>
+            </div>
+            <div class="f1">
+                <h2  class="titulo">Siga nossas redes sociais</h2>
+                <ul  class="f2">
+                    <li class="f3"> <a href="#"><img src="img/icon-face.png" alt="" width="30px" height="30px"></a></li>
+                    <li class="f3"> <a href="#"><img src="img/twitter.png" alt="" width="30px" height="30px"></a></li>
+                </ul>
+                
+            </div>
+    </div>
+    &copy; Pilar Pinturas | Grupo Senac Campinas 
+    </footer>
+    
+        
+</body>
+</html>

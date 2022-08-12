@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@import url(./style.css);
+*{ margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contatos-img{
+    background-image: url("../img/o-pintor-consultoria-banner-full-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 500px;
+    position: relative;
+}
+.contatos-img h1{
+    color: rgb(85, 85, 85);
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+.contatos-img p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.center{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+}
+.logos-contatos{
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.contatos{
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+.contatos>img{
+    width: 110px;
+    
+}
+.contatos>h2{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+.contatos>p{
+    font-size: 1.5rem;
+}
+.texto>p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.texto h2{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.formulario{
+    display: flex;
+    margin: 0 auto;/* Apenas para centralizar o form na página */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 50px; 
+}
+
+.formulario label{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.formulario img{
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    height: 110px;
+}
+.form{
+    padding: 1em;/* Para ver as bordas do formulário */
+    border: 3px solid black;
+    border-radius: 1em;
+}
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    margin-top: 10px;
+    height: 20px;
+}
+input, textarea {
+    font: 1em sans-serif;  /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    width: 500px;/* Para dar o mesmo tamanho a todos os campo de texto */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;/* Para harmonizar o look & feel das bordas nos campos de texto*/
+}
+input {
+    height: 30px;
+}
+textarea {
+    vertical-align: top;/* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    height: 5em; /* Para dar espaço suficiente para digitar algum texto */
+    resize: none;/* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    height: 200px;
+}
+
+button {
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: 5em;
+    padding: 10px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+button:hover{
+    background-color: orange;
+}
+button p{
+    font-weight: bold;
+}
+.botão{
+    padding-left: 90px;
+    
+    
+}
+@media  (max-width: 1170px)
+{ 
+    .formulario{
+        flex-direction: column;
+
+    }
+    .formulario img{
+        visibility: hidden;
+    }
+    
+}
+
